@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/incs_nav_graph"
+    app:startDestination="@id/busIncsFragment">
+
+    <dialog
+        android:id="@+id/dlgSeleccionFecha"
+        android:name="com.dam.t08p01.vista.dialogos.DlgSeleccionFecha"
+        android:label="DlgSeleccionFecha" />
+    <fragment
+        android:id="@+id/busIncsFragment"
+        android:name="com.dam.t08p01.vista.fragmentos.BusIncsFragment"
+        android:label="fragment_bus_incs"
+        tools:layout="@layout/fragment_bus_incs" >
+        <action
+            android:id="@+id/action_busIncsFragment_to_mtoIncsFragment"
+            app:destination="@id/mtoIncsFragment" />
+        <action
+            android:id="@+id/action_busIncsFragment_to_filtroIncsFragment"
+            app:destination="@id/filtroIncsFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_busIncsFragment_to_mapIncsFragment"
+            app:destination="@id/mapIncsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mtoIncsFragment"
+        android:name="com.dam.t08p01.vista.fragmentos.MtoIncsFragment"
+        android:label="fragment_mto_incs"
+        tools:layout="@layout/fragment_mto_incs" />
+    <dialog
+        android:id="@+id/dlgConfirmacionIncs"
+        android:name="com.dam.t08p01.vista.dialogos.DlgConfirmacion"
+        android:label="DlgConfirmacion" /><action android:id="@+id/action_global_dlgConfirmacionIncs" app:destination="@id/dlgConfirmacionIncs"/>
+    <fragment
+        android:id="@+id/filtroIncsFragment"
+        android:name="com.dam.t08p01.vista.fragmentos.FiltroIncsFragment"
+        android:label="fragment_filtro_incs"
+        tools:layout="@layout/fragment_filtro_incs" >
+        <action
+            android:id="@+id/action_filtroIncsFragment_to_busIncsFragment"
+            app:destination="@id/busIncsFragment"
+            app:popUpTo="@+id/busIncsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <action android:id="@+id/action_global_dlgSeleccionFecha" app:destination="@id/dlgSeleccionFecha" />
+    <fragment
+        android:id="@+id/mapIncsFragment"
+        android:name="com.dam.t08p01.vista.fragmentos.MapIncsFragment"
+        android:label="fragment_map_incs"
+        tools:layout="@layout/fragment_map_incs" />
+    <dialog
+        android:id="@+id/dlgImagenIncs"
+        android:name="com.dam.t08p01.vista.dialogos.DlgImagenIncs"
+        android:label="DlgImagenIncs" /><action android:id="@+id/action_global_dlgImagenIncs" app:destination="@id/dlgImagenIncs"/>
+</navigation>

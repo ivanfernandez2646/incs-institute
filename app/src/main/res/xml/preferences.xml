@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="vertical">
+
+    <PreferenceCategory app:title="@string/category_Almacenamiento">
+        <EditTextPreference
+            app:defaultValue="@string/Firebase_name_default"
+            app:isPreferenceVisible="false"
+            app:key="@string/Firebase_name_key"
+            app:summary="@string/Firebase_name_summary"
+            app:title="@string/Firebase_name_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/category_LocMapas">
+        <EditTextPreference
+            app:defaultValue="@string/Loc_interval_default"
+            app:key="@string/Loc_interval_key"
+            app:summary="@string/Loc_interval_summary"
+            app:title="@string/Loc_interval_title" />
+        <EditTextPreference
+            app:defaultValue="@string/Loc_desplazamiento_default"
+            app:key="@string/Loc_desplazamiento_key"
+            app:summary="@string/Loc_desplazamiento_summary"
+            app:title="@string/Loc_desplazamiento_title" />
+        <ListPreference
+            app:defaultValue="@string/Map_tipo_default"
+            app:entries="@array/array_TipoMapa"
+            app:entryValues="@array/array_TipoMapa"
+            app:key="@string/Map_tipo_key"
+            app:summary="@string/Map_tipo_summary"
+            app:title="@string/Map_tipo_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/category_Interfaz">
+        <SwitchPreferenceCompat
+            app:defaultValue="@string/login_default"
+            app:key="@string/login_key"
+            app:summary="@string/login_summary"
+            app:title="@string/login_title" />
+        <SwitchPreferenceCompat
+            app:defaultValue="@string/splashApp_default"
+            app:key="@string/splashApp_key"
+            app:summary="@string/splashApp_summary"
+            app:title="@string/splashApp_title" />
+        <SwitchPreferenceCompat
+            app:defaultValue="@string/bNav_default"
+            app:key="@string/bNav_key"
+            app:summary="@string/bNav_summary"
+            app:title="@string/bNav_title" />
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

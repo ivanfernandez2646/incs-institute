@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1021193325943",
+    "firebase_url": "https://sunlit-adviser-267416.firebaseio.com",
+    "project_id": "sunlit-adviser-267416",
+    "storage_bucket": "sunlit-adviser-267416.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021193325943:android:47b9624d72c852ae8de572",
+        "android_client_info": {
+          "package_name": "com.dam.t08p01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021193325943-5g1tdsa6c4576nce8tn22jhm1cs8rbks.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dam.t08p01",
+            "certificate_hash": "05a3123341faa1626890399c37c0153e0e1bdcb8"
+          }
+        },
+        {
+          "client_id": "1021193325943-u2517eqs728vff81ji1g41d895rt7puh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dam.t08p01",
+            "certificate_hash": "eb107a2e6d43bec7551d9684c06400e6e8ee6f19"
+          }
+        },
+        {
+          "client_id": "1021193325943-7tmniq3vtoh5parqg3ki2vl00o9r62aj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCev9_PqHD-597Emjr8AGW4ymENgOOL_no"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021193325943-7tmniq3vtoh5parqg3ki2vl00o9r62aj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
